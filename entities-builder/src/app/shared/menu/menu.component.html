@@ -1,0 +1,54 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark green">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand>
+    <a class="navbar-brand" href="#">
+        <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" alt="">
+    </a>
+    <a class="navbar-brand" href="#">FINTRIX</a>
+  </mdb-navbar-brand>
+
+  <links>
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLink='/entities' routerLinkActive="active">
+        <a class="nav-link waves-light" mdbWavesEffect>{{ entityModellerTitle }}</a>
+      </li>
+      <li class="nav-item" routerLink='/rules' routerLinkActive="active">
+        <a class="nav-link waves-light" mdbWavesEffect>{{ ruleModellerTitle }}</a>
+      </li>
+      <li class="nav-item" routerLink='/connect' routerLinkActive="active">
+        <a class="nav-link waves-light" mdbWavesEffect>{{ fintrixConnectTitle }}</a>
+      </li>
+      <li class="nav-item" routerLink='/workflow' routerLinkActive="active">
+        <a class="nav-link waves-light" mdbWavesEffect>{{ workflowModellerTitle }}</a>
+      </li>
+      <li class="nav-item" routerLink='/interface' routerLinkActive="active">
+        <a class="nav-link waves-light" mdbWavesEffect>{{ interfaceModellerTitle }}
+        </a>
+      </li>
+      <li class="nav-item" routerLink='/deploy' routerLinkActive="active">
+        <a class="nav-link waves-light" mdbWavesEffect>{{ deployModellerTitle }}
+        </a>
+      </li>
+      <li class="nav-item" routerLink='/teams' routerLinkActive="active">
+        <a class="nav-link waves-light" mdbWavesEffect>{{ teamsModellerTitle }}
+        </a>
+      </li>
+      <li class="nav-item" routerLink='/help' routerLinkActive="active">
+        <a class="nav-link waves-light" mdbWavesEffect>{{ helpModellerTitle }}
+        </a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item avatar dropdown">
+        <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="img-fluid rounded-circle z-depth-0" style="height: 25px;">
+          John Smith
+        </a>
+      </li>
+    </ul>
+  </links>
+</mdb-navbar>
+<!--/.Navbar-->
