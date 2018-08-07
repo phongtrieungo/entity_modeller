@@ -10,12 +10,20 @@ export class MenuComponent implements OnInit {
   entityModellerTitle: string;
   ruleModellerTitle: string;
   fintrixConnectTitle: string;
+  workflowModellerTitle: string;
+  deployModellerTitle: string;
+  teamsModellerTitle: string;
+  helpModellerTitle: string;
 
   constructor() {
-    this.interfaceModellerTitle = 'Interface Modeller';
-    this.entityModellerTitle    = 'Entity Modeller';
-    this.ruleModellerTitle      = 'Rule Modeller';
-    this.fintrixConnectTitle    = 'Fintrix Connect';
+    this.interfaceModellerTitle = 'Interface';
+    this.entityModellerTitle    = 'Entity';
+    this.ruleModellerTitle      = 'Rule';
+    this.fintrixConnectTitle    = 'Connect';
+    this.workflowModellerTitle  = 'Workflow';
+    this.deployModellerTitle    = 'Deploy';
+    this.teamsModellerTitle     = 'Teams';
+    this.helpModellerTitle      = 'Help';
   }
 
   ngOnInit() {
