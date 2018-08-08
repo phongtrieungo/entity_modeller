@@ -1,3 +1,30 @@
 <!-- <link rel="stylesheet" href="https://bootstrapious.com/p/bootstrap-sidebar">
 <link rel="stylesheet" href="https://github.com/BlackrockDigital/startbootstrap-simple-sidebar">
-<link rel="stylesheet" href="https://mdbootstrap.com/javascript/sidenav/"> -->
+<link rel="stylesheet" href="https://mdbootstrap.com/javascript/sidenav/"> 
+https://codepen.io/istrasoft/pen/unKsl?editors=0100-->
+
+<aside class="sidebar d-flex flex-column justify-content-between">
+    <div class="d-flex flex-column">
+        <div class="title display-4">
+            FINTRIX
+        </div>
+        <div class="search-entity-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="search">
+            </div>
+        </div>
+        
+        <div *ngIf="entities.length > 0" class="entities-list">
+            <ul class='list-group list-group-flush' *ngFor='let entity of entities'>
+                <li class="list-group-item list-group-item-action d-flex justify-content-between align-item-center">{{ entity }}
+                    <span class="badge badge-primary badge-pill">></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <div class="add-page d-flex flex-column">
+        <button class="btn btn-primary" (click)="addPage()">Add Page</button>
+    </div>
+</aside>
